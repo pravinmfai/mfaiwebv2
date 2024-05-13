@@ -1,0 +1,80 @@
+
+@font-face {
+  font-family: 'Craftwork Grotesk';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Craftwork Grotesk Regular'), url('../fonts/CraftworkGrotesk-Regular.woff') format('woff');
+  }
+.crew{
+  width: 90%;
+  margin-top: 30px;
+}
+
+.crew-btncontainer{
+  display: inline-block;
+  border: #12121233 dashed 1.5px;
+  border-radius: 13px;
+  margin-bottom: 32px;
+}
+
+.crew-btncontainer > button{
+  font-family: "Craftwork Grotesk";
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  background: #bad3fb;
+  padding: 16px 24px ;
+}
+
+.crew-para-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.crew-para-content .crew-heading{
+  font-family: "Craftwork Grotesk";
+  font-size: 3.5vw;
+  font-weight: 700;
+}
+
+.crew-para-content .crew-para{
+  color: #444;
+  font-family: "Craftwork Grotesk";
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+
+@media (min-width:840px) and (max-width:1280px) {
+  .crew{
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width:435px) and (max-width:840px) {
+  .crew{
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width:360px) and (max-width:435px) {
+  .crew{
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  .crew-btncontainer{
+    margin-left: 20px;
+  }
+  .crew-para-content{
+    margin-left: 20px;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,517 @@
+@font-face {
+  font-family: 'Craftwork Grotesk Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Craftwork Grotesk Regular'), url('../fonts/CraftworkGrotesk-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Craftwork Grotesk Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Craftwork Grotesk Medium'), url('../fonts/CraftworkGrotesk-Medium.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Craftwork Grotesk Semi Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Craftwork Grotesk Semi Bold'), url('../fonts/CraftworkGrotesk-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Craftwork Grotesk Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Craftwork Grotesk Bold'), url('../fonts/CraftworkGrotesk-Bold.woff') format('woff');
+  }
+      
+  
+@font-face {
+  font-family: 'Craftwork Grotesk Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Craftwork Grotesk Heavy'), url('../fonts/CraftworkGrotesk-Heavy.woff') format('woff');
+  }
+
+/* css styling */
+:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+/*first container */
+.about-page-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: #edf2f4;
+}
+.about-header-container{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.about-header-wrapper{
+  margin:5rem 0;
+  max-width: 98%;
+}
+
+.about-text-img-container{
+  display: flex;
+  justify-content:space-between;
+  line-height: 1.2;
+}
+
+
+
+.about-mfai-paragraph{
+  margin: 1rem 0;
+  text-align: justify;
+  line-height: 1.2;
+  font-size: 'Craftwork Grotesk Regular';
+  font-size: 1.5vw;
+}
+.about-header-text > h1{
+  font-family: 'Craftwork Grotesk Heavy';
+  font-weight:700 ;
+  font-size: 3.5vw;
+  line-height: 1.2;
+}
+
+.about-mfai-subtitle{
+  width: max-content;
+  border-radius: 1.25rem;
+  border: 1px solid grey;
+  border-style: dashed;
+  margin: 1rem 0;
+}
+
+.about-mfai-subtitle > button{
+  font-size: 2vmin;
+  padding: 1rem;
+  border: none;
+  border-radius: 1.25rem;
+  font-size: 'Craftwork Grotesk Regular';
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.80) 0%, rgba(255, 255, 255, 0.80) 100%), #3967E9;
+}
+
+
+.about-mfai-head-img{
+  max-width: 45%;
+  height: 23rem;
+  width: auto;
+  margin:1rem;
+}
+
+@media only screen and (max-width: 830px ) {
+.about-text-img-container{
+  align-items: center;
+  flex-direction: column;
+}
+.about-header-text{
+  max-width: 80%;
+}
+.about-mfai-head-img{
+  width: 100%;
+}
+}
+
+@media only screen and (min-width: 360px) and (max-width: 430px){
+  .about-text-img-container{
+      flex-direction: column;
+  }
+  .about-header-text{
+      max-width: 100%;
+      margin-right: 0;
+  }
+  .about-mfai-head-img{
+      width: auto;
+      height: auto;
+      max-width: 100%;
+  }
+
+  .about-header-text > h1{
+      font-size: 1.5rem;
+  }
+  .about-header-text > p, .about-header-text > div > button{
+      font-size: .85rem;
+  }
+
+}
+
+/*  Ceo container*/
+
+.about-founder-container,.about-vision-mission-container{
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto;
+}
+
+.founder-wrapper,.vision-mission-wrapper{
+  max-width: 98%;
+}
+
+.about-founder-img-quote, .our-vision,.our-mission{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-mfai-subtitle-founder > button {
+  font-size: 2vmin;
+  padding: 1rem;
+  border: none;
+  border-radius: 1.25rem;
+  font-size: 'Craftwork Grotesk Regular';
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.80) 0%, rgba(255, 255, 255, 0.80) 100%), #3967E9;
+}
+
+.about-mfai-subtitle-founder{
+  width: max-content;
+  border-radius: 1.25rem;
+  border: 1px solid grey;
+  border-style: dashed;
+  margin: 1rem 0;
+  align-self: flex-start;
+}
+
+.about-ceo-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.about-ceo-text > h1{
+  font-family: 'Craftwork Grotesk Bold';
+  font-weight:400 ;
+  font-size: 3.5vw;
+  line-height: 1.2;
+  text-align: center;
+  width: 90%;
+}
+
+.about-ceo-text > span{
+  margin: 1rem 0;
+  font-family: 'Craftwork Grotesk Heavy';
+  font-weight:600 ;
+  font-size: 1.5vw;
+}
+.about-ceo-text > p{
+  margin: 1rem 0;
+  font-family: 'Craftwork Grotesk Regular';
+  font-size: 1.5vw;
+}
+
+
+@media only screen and (max-width: 820px ) {
+  .founder-wrapper{
+      max-width: 90%;
+  }
+  .about-founder-img-quote{
+      flex-direction: column;
+      align-items: center;
+  }
+  .about-ceo-text{
+      max-width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 430px){
+  .founder-wrapper{
+      max-width: 90%;
+  }
+  .about-founder-img-quote{
+      flex-direction: column;
+  }
+
+}
+
+/* Our vision and Mission */
+.vision-mission-wrapper{
+  max-width: 98%;
+}
+.our-vision,.our-mission{
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.about-vm-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.about-vm-text > h1{
+  font-family: 'Craftwork Grotesk Heavy';
+  /* font-weight:900 ; */
+  font-size: 3.9vw;
+  line-height: 1.2;
+  width: 90%;
+  margin: 1rem 0;
+}
+
+.about-vm-text > p{
+  margin: 1rem 0;
+  font-family: 'Craftwork Grotesk Regular';
+  font-size: 2vw;
+}
+
+
+
+@media only screen and (max-width: 820px ) {
+  .vision-mission-wrapper{
+      max-width: 90%;
+  }
+  .our-vision{
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+  .our-mission{
+      flex-direction: column;
+      align-items: center;
+  }
+  .our-mission > .about-vm-text{
+      margin: 0;
+  }
+  .our-vision > .about-vm-text{
+      align-self: flex-start;
+      margin: 0;
+  }
+  
+}
+
+@media only screen and (min-width: 360px) and (max-width: 430px){
+
+
+  .about-vm-text > h1{
+      font-size: 1.5rem;
+  }
+  .about-vm-text > p, .about-mfai-subtitle-founder > button{
+      font-size: .85rem;
+  }
+}
+
+/* Crew Section */
+.crew{
+  width: 90%;
+  margin-top: 30px;
+}
+
+.crew-btncontainer{
+  display: inline-block;
+  border: #12121233 dashed 1.5px;
+  border-radius: 13px;
+  margin-bottom: 32px;
+}
+
+.crew-btncontainer > button{
+  font-family: "Craftwork Grotesk Regular";
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  background: #bad3fb;
+  padding: 16px 24px ;
+}
+
+.crew-para-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.crew-para-content .crew-heading{
+  font-family: "Craftwork Grotesk Regular";
+  font-size: 3.5vw;
+  font-weight: 700;
+}
+
+.crew-para-content .crew-para{
+  color: #444;
+  font-family: "Craftwork Grotesk Regular";
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+
+@media (min-width:840px) and (max-width:1280px) {
+  .crew{
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width:430px) and (max-width:840px) {
+  .crew{
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width:360px) and (max-width:430px) {
+  .crew{
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  .crew-btncontainer{
+    margin-left: 20px;
+  }
+  .crew-para-content{
+    margin-left: 20px;
+  }
+}
+
+
+
+/* Crew cards */
+.crew-member-cards-grid{
+  width: 100%;
+  margin-top: 57px ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 16px;
+  row-gap: 45px;
+}
+
+.crew-member-card{
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  min-width:299.5px;
+  min-height: 385px;
+  gap: 12px;
+  box-shadow: 0 20px 100px rgba(14,21,47,0.4), 0 16px 40px rgba(14,21,47,0.4);
+  border-radius: 20px;
+}
+
+.member-profile-cover{
+  overflow: hidden;
+  height: 298px;
+  width: 298px;
+  border-radius: 20px;
+  background-color: #d5e4ef;
+}
+
+.member-profile-cover img{
+  width: 100%;
+}
+
+.crew-member-card-details{
+  max-width: 298px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.crew-member-card .member-details{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-details > h3{
+  color: #000;
+  font-family: "Craftwork Grotesk Medium";
+  font-size: 2.3vw;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.member-details > p{
+  color: #000;
+  font-family: "Craftwork Grotesk Regular";
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.crew-member-card-details > img {
+  height: 10px;
+  width: 10px;
+}
+
+
+
+@media (min-width:840px) and (max-width:1280px) {
+  .crew-member-cards-grid{
+    width: 95%;
+    margin-top: 57px ;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 45px;
+  }
+  .crew-member-card{
+    flex: 0;
+    display: flex;
+    flex-direction: column;
+    min-width:298px;
+    min-height: 385px;
+    gap: 12px;
+  }
+}
+
+@media (min-width:435px) and (max-width:840px) {
+  .crew-member-cards-grid{
+    width: 95%;
+    margin-top: 57px ;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 45px;
+  }
+  .crew-member-card{
+    flex: 0;
+    display: flex;
+    flex-direction: column;
+    min-width:298px;
+    min-height: 385px;
+    gap: 12px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 435px) {
+  .crew-member-cards-grid {
+    margin-top: 57px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 50px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    justify-content: center;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 10px; 
+  }
+
+.crew-member-card {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  min-width: 298px;
+  margin: 0 10px; 
+}
+
+  .crew-member-card:first-child {
+    margin-left: calc(50vw - (-210px) );
+  }
+
+  .crew-member-card:last-child {
+    margin-right: calc(50vw - 149px); 
+  }
+
+  .crew-member-cards-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+}

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Craftwork Grotesk Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Craftwork Grotesk Regular'), url('../fonts/CraftworkGrotesk-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Craftwork Grotesk Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Craftwork Grotesk Medium'), url('../fonts/CraftworkGrotesk-Medium.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Craftwork Grotesk Semi Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Craftwork Grotesk Semi Bold'), url('../fonts/CraftworkGrotesk-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Craftwork Grotesk Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Craftwork Grotesk Bold'), url('../fonts/CraftworkGrotesk-Bold.woff') format('woff');
+    }
+        
+    
+@font-face {
+    font-family: 'Craftwork Grotesk Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Craftwork Grotesk Heavy'), url('../fonts/CraftworkGrotesk-Heavy.woff') format('woff');
+    }
+
+
+.section-meet{
+    /* display: flex; */
+    width:90%;
+    margin: 5rem  0;
+    display: flex;
+    justify-content: center;
+}
+
+.container-meet{
+    display: flex;
+}
+.content-meet{
+    font-family: "craftwork Grotesk Heavy";
+    font-size: 2vw;
+    font-weight:400px ;
+    text-align: left;
+    line-height: 1;
+}
+
+.cm-text{
+    margin:1rem 0;
+}
+.content-meet > button{
+    font-family: "craftwork Grotesk Regular";
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1.25rem;
+    border: none;
+    background-color: #3967E9;
+    font-weight: 400px;
+    padding: 1rem 2rem;
+}
+
+.content-meet-button > img{
+    max-width: 2rem;
+    margin-left: 1rem;
+    vertical-align: middle;
+}
+.content-meet button span{
+    display: flex;
+    font-family: "craftwork Grotesk Regular";
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 400px;
+    vertical-align: middle;
+}
+
+
+.image-meet > img{
+    max-width: 80%;
+    height: 23rem;
+    width: auto;
+    margin:1rem;
+}
+
+
+
+@media only  screen and (max-width: 830px){
+    .container-meet{
+        flex-direction: column;
+        width: 90%;
+    }
+    .content-meet-button{
+        margin:1.5rem 0;
+    }
+    .content-meet-button > span{
+        font-size: 1.2rem !important;
+    }
+
+    .image-meet > img{
+        margin: 0;
+        max-width: 100%;
+    }
+}
+
+
+
+@media only screen and (min-width: 360px) and (max-width: 430px){
+    .container-meet{
+    flex-direction: column;
+    width: 90%;
+    }
+    .cm-text{
+        font-size: 1.5rem;
+    }
+    .content-meet-button > span{
+        font-size: .5rem;
+    }
+    .content-meet-button{
+        padding: 1rem !important;
+    }
+}
+
